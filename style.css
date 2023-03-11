@@ -29,8 +29,8 @@ body{
 }
 .container{
   margin:4rem 1.5rem;
-  max-width:800px;
-  min-height: 500px;
+  max-width:700px;
+  min-height: 450px;
   display: grid;
   grid-template-columns: 1fr;
   box-shadow: 0 5px 25px rgb(0,0,0,0.2) ;
@@ -38,7 +38,7 @@ body{
   overflow: hidden;
 }
 .column{
-  padding: 2rem; 
+  padding: 2.5rem; 
   color: #fff;
 }
 .header{
@@ -125,6 +125,6 @@ body{
     grid-template-columns: 1fr 1fr;
   }
   .right-column{
-    padding-right: 9rem;
+    padding-right: 5.6rem;
   }
 }
