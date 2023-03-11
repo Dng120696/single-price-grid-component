@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+
+/* ### Primary */
+
+--Cyan: hsl(179, 62%, 43%);
+--Cyan-light: hsla(179, 62%, 48%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Gray);
+}
+.container{
+  margin:4rem 1.5rem;
+  max-width:800px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 5px 25px rgb(0,0,0,0.2) ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.column{
+  padding: 2rem; 
+  color: #fff;
+}
+.header{
+  background-color: #fff;
+  overflow: hidden;
+}
+.header-title{
+  color: var(--Cyan);
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+.header-sub-title{
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+ 
+}
+.header-content{
+  color: var(--Grayish-Blue);
+  letter-spacing: 1px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+}
+.left-column{
+  background-color: var(--Cyan);
+}
+.left-column-title{
+  margin-bottom: 1.5rem;
+}
+.left-column .num-box{ 
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+  margin-bottom: 1rem;
+
+}
+.left-column .num{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+.left-column .num-info{
+  color: var(--Light-Gray);
+  font-weight: 400;
+  font-size: 14px;
+}
+.left-column p{
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.btn{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--Bright-Yellow);
+  font-weight: 700;
+  box-shadow: 0 5px 25px rgb(0,0,0,0.2) ;
+}
+.right-column{
+  background-color: var(--Cyan-light);
+  padding-right: 4rem;
+}
+.right-column-title{
+  padding-bottom: 1rem;
+}
+.right-column-content{
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--Light-Gray);
+  letter-spacing: 1.1px;
+  font-size: 14px;
+}
+
+@media (min-width:678px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .right-column{
+    padding-right: 9rem;
+  }
+}
